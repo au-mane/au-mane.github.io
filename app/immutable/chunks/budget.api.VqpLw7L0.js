@@ -1,1 +1,0 @@
-import{s as o}from"./supabase-config.Y8iSvhNi.js";import{w as f}from"./index.XVz5aN3V.js";import{b as i}from"./scheduler.CgjAsyDf.js";const a=f([]);let t=!1;async function l(){if(t)return i(a);t=!0;const{data:e,error:r}=await o.from("budgets").select("*");if(r)throw r;const s=e||[];return a.set(s),setTimeout(()=>t=!1,800),s}export{l as g};
